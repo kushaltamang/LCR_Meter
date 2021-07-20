@@ -1,4 +1,4 @@
-Designed a system capable of measuring resistance, inductance (and ESR), and capacitance. A design goal of this project is to limit the total cost of the daughterboard and components added to the TM4C123GXL evaluation board to $3 in 10k quantities. The virtual COM port on the evaluation board talks with PUTTY to provide a command line user interface.
+Designed a system capable of measuring resistance, inductance (and ESR), and capacitance. A design goal of this project is to limit the total cost of the daughterboard and components added to the TM4C123GXL evaluation board to $5 in 10k quantities. The virtual COM port on the evaluation board talks with PUTTY to provide a command line user interface.
 
 - Five pins (MEAS_LR, MEAS_C, HIGHSIDE_R, LOWSIDE_R, INTEGRATE) connects the circuit to the RedBoard using GPIO pins (PA2, PD6, PA6, PD0, and PA7 respectively). The 5 GPIO pins are connected to the 5 transistors that turn on/off depedning upon the DUT(inductor, capacitor, reisstor).
 - The DUT is connected to the comparator internal to the RedBoard using the PC7 pin. The comparator is set up to trigger an interrupt when the PC7 pin reaches Vref = 2.469 V. 
