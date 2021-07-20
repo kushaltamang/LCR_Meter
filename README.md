@@ -1,1 +1,1 @@
-# LCR_Meter
+I designed a system capable of measuring resistance, inductance (and ESR), and capacitance. A design goal of this project is to limit the total cost of the daughterboard and components added to the TM4C123GXL evaluation board to $3 in 10k quantities. The virtual COM port on the evaluation board talks with PUTTY to provide a command line user interface.
